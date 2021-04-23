@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jash\\source\\repos\\TheRobeOfBreadSummoning.API\\TheRobeOfBreadSummoning.API.csproj": {}
+    "/Users/jash/RiderProjects/TheRobeOfBreadSummoning.API/TheRobeOfBreadSummoning.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jash\\source\\repos\\TheRobeOfBreadSummoning.API\\TheRobeOfBreadSummoning.API.csproj": {
+    "/Users/jash/RiderProjects/TheRobeOfBreadSummoning.API/TheRobeOfBreadSummoning.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jash\\source\\repos\\TheRobeOfBreadSummoning.API\\TheRobeOfBreadSummoning.API.csproj",
+        "projectUniqueName": "/Users/jash/RiderProjects/TheRobeOfBreadSummoning.API/TheRobeOfBreadSummoning.API.csproj",
         "projectName": "TheRobeOfBreadSummoning.API",
-        "projectPath": "C:\\Users\\jash\\source\\repos\\TheRobeOfBreadSummoning.API\\TheRobeOfBreadSummoning.API.csproj",
-        "packagesPath": "C:\\Users\\jash\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jash\\source\\repos\\TheRobeOfBreadSummoning.API\\obj\\",
+        "projectPath": "/Users/jash/RiderProjects/TheRobeOfBreadSummoning.API/TheRobeOfBreadSummoning.API.csproj",
+        "packagesPath": "/Users/jash/.nuget/packages/",
+        "outputPath": "/Users/jash/RiderProjects/TheRobeOfBreadSummoning.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jash\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jash/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,6 +53,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-preview.3.21202.5/RuntimeIdentifierGraph.json"
         }
       }
     }

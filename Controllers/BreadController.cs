@@ -8,28 +8,31 @@ using TheRobeOfBreadSummoning.API.Domain.Models;
 
 namespace TheRobeOfBreadSummoning.API.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class BreadController : ControllerBase
+  [ApiController]
+  [Route("[controller]")]
+  public class BreadController : ControllerBase
+  {
+    private readonly ILogger<BreadController> _logger;
+
+    public BreadController(ILogger<BreadController> logger)
     {
-
-        private readonly ILogger<BreadController> _logger;
-
-        public BreadController(ILogger<BreadController> logger)
-        {
-            _logger = logger;
-        }
-
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return Ok(Bread.Loaves);
-        }
-
-        [HttpGet("{id}")]
-        public IEnumerable<string> Get(int id)
-        {
-            return Ok(Bread.Loaves[id]);
-        }
+      _logger = logger;
     }
+
+    [HttpGet]
+    public ActionResult<IEnumerable<string>> Get()
+    {
+      return Ok(Bread.Loaves);
+    }
+
+    [HttpGet("{id}")]
+    public ActionResult<IEnumerable<string>> Get(int id)
+    {
+      if (id > 100 || id <= 0)
+      {
+        return BadRequest("ID out of bounds, ID must be integer value between 1 and 100");
+      }
+      return Ok(Bread.Loaves[id - 1]);
+    }
+  }
 }
